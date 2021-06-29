@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("./images/Morning.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.todo-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vh;
+  height: 70vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.todo-section h1 {
+  color: rgb(31, 31, 31);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 4em;
+}
+.todo-section h3 {
+  color: rgb(31, 31, 31);
+  font-weight: 400;
+  text-align: center;
+  font-size: 2em;
+}
+#inputField {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.todo-button {
+  width: 10%;
+  height: 40px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.todo-button:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+}
+.todo-list-container {
+  text-align: left;
+  width: 100%;
+  height: 40vh;
+  overflow: auto;
+}
+.todo-list-container li {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 1.1em;
+  list-style-type: none;
+  border-radius: 5px;
+  font-weight: 400;
+  background-color: #f4f4f4a4;
+  text-align: center;
+  width: 90%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.todo-list-container li:hover {
+  transform: scale(0.9);
+}
